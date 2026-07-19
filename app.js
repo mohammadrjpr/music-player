@@ -90,6 +90,13 @@ if("serviceWorker" in navigator){
 navigator.serviceWorker.register("./service-worker.js");
 
 }
+});
+window.addEventListener("load", () => {
+    audio.play().catch(err
+=> {
+console.log(Autoplay blocked:",err);
+    });
+});
 
 audio.onended=()=>{
 
