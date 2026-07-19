@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#000000">
+
+<title>Music Player PWA</title>
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="icon" href="assets/icons/icon-192.png">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="player">
+
+<img class="cover" src="assets/cover.jpg">
+
+<h1>روزای سخت</h1>
+<h3>مسعود صادقلو</h3>
+
+
+<div class="equalizer">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+
+<audio id="audio" src="assets/song.mp3"></audio>
+
+
+<div class="progress">
+<input type="range" id="seek" value="0">
+</div>
+
+
+<div class="time">
+<span id="current">0:00</span>
+<span id="duration">0:00</span>
+</div>
+
+
+<div class="controls">
+
+<button id="prev">⏮</button>
+
+<button id="play">
+▶
+</button>
+
+<button id="next">
+⏭
+</button>
+
+</div>
+
+
+<div class="qr">
+
+<img src="assets/qrcode.png">
+
+<p>اسکن کنید و گوش دهید</p>
+
+</div>
+
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
